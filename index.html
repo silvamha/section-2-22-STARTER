@@ -7,9 +7,29 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+<ul>
+  <li v-for="(bird, index) in birds":class='bird'>
+{{ bird }}
+  </li>
 
-  <script src="https://unpkg.com/vue@next"></script>
+  <hr />
+
+</ul>    
+
+<ul v-for="person in people">
+  <li>
+<div>
+  <p>{{ person.name}}</p>
+</div>
+<div>
+  <p>{{person.age}}</p>
+</div>
+  </li>
+</ul>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="app.js"></script>
 </body>
 
